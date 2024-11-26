@@ -61,13 +61,3 @@ go_register_toolchains(version = "1.20.5")
 
 # Initialize dependencies for Gazelle, which will help in generating Bazel BUILD files for Go projects.
 gazelle_dependencies()
-
-# Load and setup dependencies for Rust build system.
-# These dependencies ensure proper handling of Rust-related build tools.
-load("@rules_rust//rust:repositories.bzl", "rules_rust_dependencies", "rust_register_toolchains")
-
-# Initialize Rust-specific dependencies. This prepares the environment for compiling Rust code.
-rules_rust_dependencies()
-
-# Register Rust toolchains for building Rust code with Bazel.
-rust_register_toolchains()

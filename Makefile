@@ -1,6 +1,6 @@
-.PHONY: all run_go run_python run_cpp run_rs
+.PHONY: all run_go run_python run_cpp
 
-all: run_go run_python run_cpp run_rs
+all: run_go run_python run_cpp
 
 run_go:
 	@echo "Running Go app..."
@@ -13,7 +13,3 @@ run_python:
 run_cpp:
 	@echo "Running C++ app..."
 	@bazel run //cpp:app
-
-run_rs:
-	@echo "Running Rust app..."
-	@bazel run //rs:app
