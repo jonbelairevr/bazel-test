@@ -1,6 +1,6 @@
-.PHONY: all run_go run_python run_cpp
+.PHONY: all run_go run_python run_cpp run_rs
 
-all: run_go run_python run_cpp
+all: run_go run_python run_cpp run_rs
 
 run_go:
 	@echo "Running Go app..."
